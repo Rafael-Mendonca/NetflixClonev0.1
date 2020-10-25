@@ -1,0 +1,153 @@
+/*trabalhando com variáveis -  Principais cores da Netflix*/
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+    font-size: 62.5%;
+}
+
+/* Ressetar os padrões do CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Trabalhando com o Body */
+body {
+    /* Cor de fundo padrão */
+    background-color: var(--preta);
+    /* fonte */
+    font-family: 'Times New Roman', Times, serif;
+    /*cor da fonte padrão branca*/
+    color: #ffffff;
+}
+
+/*Posicionando os elementos*/
+header .container {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /*alinhar os documentos na vertical no centro*/
+    align-items: center;
+    /*alinhar o espaço entre o h2 e a nav-menu de navegação - para espaço entre eles*/
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+/*trabalhando com a logo - NETFLIX*/
+
+header .logo {
+    color: var(--vermelho);
+    /*fonte da logo - NETFLIX*/
+    font-family: 'Bebas Neue', cursive;
+    font-size: 0px;
+    /*margem para não grudar na tela*/
+}
+
+header .logo img {
+    max-width: 15rem;
+    max-height: 15rem;
+    width: auto;
+    height: auto;
+}
+
+header nav a {
+    /* não possui linha em baixo - portanto sem nenhuma decoração-*/
+    text-decoration: none;
+    /*fonte clara porém não branca*/
+    color: #aaaaaa;
+    /*não ficam grudadas uma nas outras*/
+    margin-right: 1rem;
+    /*posicionar no final*/
+    align-content: flex-end;
+}
+
+.last-item {
+    margin-right: 2.5rem;
+}
+
+/*quando passar o mouse por cima irá mudar*/
+header nav a:hover {
+    /*irá clarear p/ branco*/
+    color: #ffffff;
+}
+
+/*Trabalhando com a caixa filme-principal*/
+
+.filme-principal {
+    /*tamanho da fonte*/
+    font-size: 1.6rem;
+    /*colocando imagem de fundo e criando uma camda de gradiente em cima da imagem usango linear-gradiente*/
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)100%), url('/img/cobrakai.jpg');
+    /*tamanho da caixa principal*/
+    height: 70rem;
+    /*a imagem vai preencher toda a caixa*/
+    background-size: cover;
+    /*display flex*/
+    display: flex;
+    /*deixar em colunas*/
+    flex-direction: column;
+    /*alinhar no centro*/
+    justify-content: center;
+    /*iniciar da esquerda*/
+    align-items: flex-start;
+}
+
+main .container{
+    margin-left: 5rem;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 4rem;
+    margin: 1rem;
+    justify-content: center;
+    text-align: justify;
+    width: 50%;
+}
+
+.filme-principal .titulo {
+    font-size: 4rem;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-top: 5%;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: #ffffff;
+    padding: 1.5rem 3rem;
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.botao i {
+    margin-right: 1.5rem;
+}
+
+/*Arrumando CSS BOX-FILME*/
+
+.carrosel-filmes {
+    margin-top: 1.5rem;
+    margin-left: 5rem;
+}
+
+/*mudando a fonte do h3*/
+.carrosel-filmes h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}

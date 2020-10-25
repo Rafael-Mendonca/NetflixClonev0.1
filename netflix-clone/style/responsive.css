@@ -1,0 +1,31 @@
+/*Deixando o Clone responsivo*/
+
+@media screen and (max-width:700px) {
+    body {
+        margin: 0;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .logo,
+    main .carrosel-filmes {
+        margin-left: 0;
+    }
+
+    .filme-principal .titulo img {
+        width: 20rem;
+    }
+
+    .botao {
+        margin-top: 0.5rem;
+        width: 30rem;
+    }
+}
